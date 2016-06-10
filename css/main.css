@@ -30,8 +30,14 @@
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	padding-top: 55px;
 }
-
+#mainApp.secondaryPanelActive .primaryPanel{
+	width: 60%;
+}	
+#mainApp.secondaryPanelActive .secondaryPanel{
+	width: 40%;
+}
 .layoutPanel{
 	transition: 0.2s all ease-out;
 	box-sizing: border-box;
@@ -39,13 +45,13 @@
 	float: left;
 }
 .primaryPanel{
-	width: 60%;
+	width: 100%;
 	height: 100%;
 	position: relative;
 	z-index: 10;
 }
 .secondaryPanel{
-	width: 40%;
+	width: 0%;
 	background: #ccc;
 	height: 100%;
 	position: fixed;
@@ -68,8 +74,11 @@
 	overflow: hidden;
     background: #8cc74b;
     height: 55px;
-    position: relative;
+    top: 0;
+    width: 100%;
     z-index: 500;
+    position: absolute;
+    
 }
 .proyectosMenu{
 	color: white;
@@ -134,12 +143,40 @@
 	box-sizing: border-box;
 	text-align: center;
 	display: inline-block;
-	
+
 	border-bottom: 2px solid #8cc74b;
-	transition: 0.2s all ease-out;
+	transition: 0.1s all ease-out;
 	color: #4f4f4f;
 	position: relative;
 	overflow: hidden;
+	
+
+}
+.proyecto:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.proyecto.active{
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	border: 3px solid #8cc74b;
+}
+.proyecto:hover .proyectoImg .hoverMask{
+	height: 100%;
+	opacity: 1;
+	padding-top: 3%;
+}
+.proyectoImg .hoverMask{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	bottom: 0px;
+	background: url(../img/hexagono.png) no-repeat center;
+	opacity: 0;
+	transition: 0.1s opacity ease-in-out, 0.1s height ease-out;
+	color: white;
+	box-sizing: border-box;
+	padding-top: 20%;
+	text-decoration: underline;
+	cursor: pointer;
 }
 .proyectoImg{
 	width: 100%;
@@ -147,7 +184,10 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: relative;
+	
 }
+
 .proyectoTitle{
 	font-size: 23px;
 	margin: 0;
@@ -157,14 +197,16 @@
 }
 .proyectoDescription{
 	font-size: 14px;
-	margin: 10px 0;
+	margin: 10px 1%;
 	height: 85px;
 	overflow: auto;
 	padding: 0 1%;
 }
 .proyectoDetails{
 	width: 100%;
-	padding: 10px 1%;
+	padding: 10px 1% ;
+	overflow: hidden;
+	
 }
 .proyectoDetails .theMoney{
 	font-size: 12px;
@@ -203,12 +245,80 @@
 	box-shadow: inset 2px 1px 6px rgba(0,0,0,0.3);
 	transition: 0.4s all ease-out;
 }
+.equity,
+.remainingDays{
+	width: 40%;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1;
+	color:  #8cc74b;
+	font-weight: 800;
+}
+.remainingDays{
+	float: right;
+	background: url(../img/tiempo.png) no-repeat center top;
+	background-size: 25px;
+	padding: 30px 0 0;
+}
+.equity{
+	float: left;
+	background: url(../img/porcentaje.png) no-repeat center top;
+	background-size: 25px;
+	padding: 30px 0 0;
+}
+.equity .equityQty:after{
+	content: "%";
+}
+.equity .equityQty,
+.remainingDays .days{
+	display: block;
+	font-size: 14px;
+	display: block;
+	font-weight: 400;
+	color: #4f4f4f;
+}
+
+.followSection{
+	width: 100%;
+	text-align: right;
+	padding-right: 5%;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+.followSection .followers{
+	display: inline-block;
+	padding-right: 5px ; 
+	vertical-align: top;
+	height: 40px;
+	line-height: 40px;
+}
+.followSection .followBtn{
+	display: inline-block;
+	font-size: 20px;
+	width: 27px;
+	height: 40px;
+	margin: 0;
+	overflow: hidden;
+	background: #9f9f9f;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	padding-left: 2px;
+}
+.followSection .followBtn.active{
+	background: #fb3838;
+    color: white;
+}
 footer{
 	text-align: center;
 	background: #4f4f4f;
 	color: #bbbbbb;
 	font-weight: 800;
 	padding: 15px 0;
+	position: relative;
+	z-index: 500;
 }
 footer p{
 	height: 100%;

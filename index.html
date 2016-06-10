@@ -18,30 +18,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-              </form>
-            </div>
-            </div>
-        </nav> -->
+
 
         <nav id="mainNav">
             <div class="container-fluid row">
@@ -60,24 +37,27 @@
             
         </nav>
         <main id="mainApp">
-            <nav id="proyectosNav">
+            <nav id="proyectosNav"  data-53="position:absolute;" data-54="position: fixed;">
                 <h2 class="pageTitle pull-left">Proyectos</h2>
                 <ul class="proyectosMenu pull-right">
-                    <li class="btn"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Proyectos nuevos</li>
-                    <li class="btn"><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span> Fondeados en 2da Ronda</li>
-                    <li class="btn"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Proyectos exitosos</li>
-                    <li class="btn"><span class="   glyphicon glyphicon-flag" aria-hidden="true"></span> Proyectos Futuros</li>
+                    <li class="btn" data-section="proyectosNuevos"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Proyectos nuevos</li>
+                    <li class="btn" data-section="fondeadosSegunda"><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span> Fondeados en 2da Ronda</li>
+                    <li class="btn" data-section="proyectosExitosos"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Proyectos exitosos</li>
+                    <li class="btn" data-section="proyectosFuturos"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Proyectos Futuros</li>
                 </ul>
             </nav>
             <section class="layoutPanel primaryPanel">
 
-                <article class="seccionProyecto" id="descubreProyectos">
+                <article class="seccionProyecto" id="proyectosNuevos">
                     <h3 class="proyectosTitle">
                         <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Proyectos nuevos
                     </h3>
                     <div class="proyectosContainer">
+                        
                         <div class="proyecto">
-                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')"></figure>
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
                             <h4 class="proyectoTitle">Rekt4less</h4>
                             <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
                             <div class="proyectoDetails">
@@ -93,13 +73,15 @@
                                 <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
                             </div>
                             <div class="followSection">
-                                <div class="followers">8 seguidores</div>
-                                <button class="followBtn">star</button>
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
                             </div>
-                            <div class="hoverMask"></div>
+                            
                         </div>
                         <div class="proyecto">
-                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')"></figure>
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
                             <h4 class="proyectoTitle">Rekt4less</h4>
                             <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
                             <div class="proyectoDetails">
@@ -115,13 +97,15 @@
                                 <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
                             </div>
                             <div class="followSection">
-                                <div class="followers">8 seguidores</div>
-                                <button class="followBtn">star</button>
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
                             </div>
-                            <div class="hoverMask"></div>
+                            
                         </div>
                         <div class="proyecto">
-                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')"></figure>
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
                             <h4 class="proyectoTitle">Rekt4less</h4>
                             <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
                             <div class="proyectoDetails">
@@ -137,13 +121,355 @@
                                 <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
                             </div>
                             <div class="followSection">
-                                <div class="followers">8 seguidores</div>
-                                <button class="followBtn">star</button>
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
                             </div>
-                            <div class="hoverMask"></div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
                         </div>
                         
-                    </div>
+                    </div> <!-- proyectosContainer -->
+                </article>
+
+                <article class="seccionProyecto" id="fondeadosSegunda">
+                    <h3 class="proyectosTitle">
+                        <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span> Fondeados en 2da Ronda
+                    </h3>
+                    <div class="proyectosContainer">
+                        
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div> <!-- proyectosContainer -->
+                </article>
+
+                <article class="seccionProyecto" id="proyectosExitosos">
+                    <h3 class="proyectosTitle">
+                        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Proyectos exitosos
+                    </h3>
+                    <div class="proyectosContainer">
+                        
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div> <!-- proyectosContainer -->
+                </article>
+
+                <article class="seccionProyecto" id="proyectosFuturos">
+                    <h3 class="proyectosTitle">
+                        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Proyectos Futuros
+                    </h3>
+                    <div class="proyectosContainer">
+                        
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="proyecto">
+                            <figure class="proyectoImg" style="background-image: url('img/proyectos/proyectoImg1.jpg')">
+                                <div class="hoverMask">Ver mas</div>
+                            </figure>
+                            <h4 class="proyectoTitle">Rekt4less</h4>
+                            <p class="proyectoDescription">Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.</p>
+                            <div class="proyectoDetails">
+                                
+                                <div class="progresoMeta">
+                                    <div class="progreso" style="width: 80%;"></div>
+                                </div>
+                                <p class="theMoney juntado">Ha juntado <span class="dinero">189,900</span></p>
+                                <p class="theMoney meta">Meta <span class="dinero">296,600</span></p>
+
+                                <div class="equity">Porcentaje<span class="equityQty">7</span></div>
+                                
+                                <div class="remainingDays">Dias Restantes <span class="days">37</span></div>
+                            </div>
+                            <div class="followSection">
+                                <div class="followers"> 8 seguidores </div>
+                                <button class="followBtn"> <span class="glyphicon glyphicon-star"></span></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div> <!-- proyectosContainer -->
                 </article>
 
             </section>
@@ -162,6 +488,8 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/react.min.js"></script>
         <script src="js/vendor/react-dom.min.js"></script>
+        <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
+
         <script src="js/main.js"></script>
     </body>
 </html>
