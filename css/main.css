@@ -112,6 +112,13 @@
 	overflow: hidden;
 	
 }
+
+.proyecto.fondeado{
+	background: url(../img/fondeado.png) no-repeat ;
+	background-position: 10% 99%;
+	background-size: 130px
+	
+}
 .proyectosTitle{
 	color: #4f4f4f;
 	font-weight: 400;
