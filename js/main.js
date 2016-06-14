@@ -5,13 +5,13 @@ var proyectsDB = [
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
 			currentMoney: 145000,
-			goal: 296600,
+			goal: 145000,
 			equity: 7,
 			firstTime:'Fri May 15 2016 14:25:16 GMT-0500 (Hora de verano central (México))', 
 			endTime: 'Fri Jun 15 2016 14:25:16 GMT-0500 (Hora de verano central (México))',
 			followers: 5,
 			category: 1,
-			fondeado: false,
+			fondeado: true,
 			image: 'proyectoImg1.jpg',
 			video: '-6C5TZKwn2Q',
 			following: true
@@ -29,7 +29,7 @@ var proyectsDB = [
 			category: 0,
 			fondeado: false,
 			image: 'proyectoImg1.jpg',
-			video: '-6C5TZKwn2Q',
+			video: 'fLBZFBS72XU',
 			following: false
 		},
 		{
@@ -65,7 +65,7 @@ var proyectsDB = [
 			following: false
 		},
 		{
-			id: 3,
+			id: 4,
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
 			currentMoney: 89000,
@@ -81,7 +81,7 @@ var proyectsDB = [
 			following: false
 		},
 		{
-			id: 4,
+			id:5,
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
 			currentMoney: 190000,
@@ -97,23 +97,23 @@ var proyectsDB = [
 			following: true
 		},
 		{
-			id: 5,
+			id: 6,
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
-			currentMoney: 150000,
-			goal: 296600,
+			currentMoney: 350000,
+			goal: 350000,
 			equity: 7,
 			firstTime:'Fri May 15 2016 14:25:16 GMT-0500 (Hora de verano central (México))', 
 			endTime: 'Fri Jun 15 2016 14:25:16 GMT-0500 (Hora de verano central (México))',
 			followers: 5,
 			category: 1,
-			fondeado: false,
+			fondeado: true,
 			image: 'proyectoImg1.jpg',
 			video: '-6C5TZKwn2Q',
 			following: false
 		},
 		{
-			id: 6,
+			id: 7,
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
 			currentMoney: 270000,
@@ -129,7 +129,7 @@ var proyectsDB = [
 			following: false
 		},
 		{
-			id: 3,
+			id: 8,
 			name: 'Rekt4less',
 			description: 'Tienda online de videojuegos con un sistema de venta random, ya está funcionando y generando ventas, necesitamos inversión para crecer.',
 			currentMoney: 1000,
@@ -150,4 +150,3 @@ var proyectsDB = [
 
 
 
-var s = skrollr.init();

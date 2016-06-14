@@ -32,14 +32,14 @@
 	z-index: 1;
 	padding-top: 55px;
 }
-#mainApp.secondaryPanelActive .primaryPanel{
+#panels.secondaryPanelActive .primaryPanel{
 	width: 60%;
 }	
-#mainApp.secondaryPanelActive .secondaryPanel{
+#panels.secondaryPanelActive .secondaryPanel{
 	width: 40%;
 }
 .layoutPanel{
-	transition: 0.2s all ease-out;
+	transition: 0.2s width ease-out;
 	box-sizing: border-box;
 	margin: 0;
 	float: left;
@@ -53,11 +53,95 @@
 .secondaryPanel{
 	width: 0%;
 	background: #ccc;
-	height: 100%;
+	height: calc(100% - 109px) ;
+	top: 109px;
 	position: fixed;
 	z-index: 15;
 	right: 0;
 	top: 0;
+	background: #dedede;
+    box-shadow: 0 -15px 10px rgba(0,0,0,0.3);
+}
+.secondaryPanel .barContainer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.barContainer iframe{
+	align-self: flex-start;
+}
+.barContainer h3{
+	margin: 10px;
+	color: #4f4f4f;
+	font-weight: 800;
+	font-size: 30px;
+}
+.barContainer h6{
+	font-size: 16px;
+	margin: 8px 0;
+	/* border-top: 1px solid #5f8833; */
+	width: 140px;
+	margin: 4px auto;
+	color: #5f8833;
+	font-weight: 600;
+}
+.amigos{
+	width: 100%;
+	text-align: center;
+}
+.amigos figure{
+	display: inline-block;
+	margin: 10px 5px;
+	padding: 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	transition: 0.3s all;
+	background-color: white;
+	text-align: left;
+	padding-left: 40px;
+	box-sizing: border-box;
+	background-position: left;
+	cursor: pointer;
+}
+.amigos figure figcaption{
+	line-height: 40px;
+}
+.amigos figure:hover{
+	width: 180px;
+	padding-left: 45px;
+}
+.amigo1{
+	background-image: url(../img/amigos/amigo1.jpg);
+}
+.amigo2{
+	background-image: url(../img/amigos/amigo2.jpg);
+}
+.amigo3{
+	background-image: url(../img/amigos/amigo3.jpg);
+}
+button.verProyecto {
+    width: 260px;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px auto;
+    height: 45px;
+    background: #8cc74b;
+    color: #050801;
+    border: none;
+    border-bottom: 3px solid #5f8833;
+    align-self: flex-end;
 }
 .pageTitle{
 	color: white;
@@ -137,16 +221,25 @@
 	box-sizing: border-box;
 	padding: 15px 3%;
 	text-align: left;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 
 .proyecto{
-	width: 23%;
-	margin: 15px 1%;
+	width: 350px;
+	margin: center;
+	margin: 10px auto;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 4px;
-	min-width: 300px;
-	max-width: 350px;
+	
 	box-sizing: border-box;
 	text-align: center;
 	display: inline-block;
